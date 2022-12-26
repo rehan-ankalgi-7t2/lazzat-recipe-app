@@ -1,0 +1,21 @@
+.hero {
+    height: 480px;
+    width: 100vw;
+    background-image: url('../assets/images/diana-polekhina-UrbVL4SOM8M-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 80px;
+    width: 600px;
+}
+
+

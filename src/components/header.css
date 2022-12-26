@@ -6,6 +6,8 @@
     padding: 0px 40px;
     display: flex;
     align-items: center;
+    position: static;
+    top: 0;
 }
 
 .header h1 {
