@@ -1,4 +1,5 @@
 import {React, useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 
 const Popular = () => {
 
@@ -23,7 +24,9 @@ const Popular = () => {
                 <div key={recipe.id}>
                     <img src={recipe.image} alt="" />
                     <div className='recipe-title'>
-                      <h2>{recipe.name}</h2>
+                      <Link to={`/recipe/${recipe.id}`}>
+                        <h2>{recipe.title}</h2>
+                      </Link>
                       <p></p>
                     </div>
                 </div>
