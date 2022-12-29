@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import RecipeCard from './RecipeCard';
+import ErrorPage from './ErrorPage';
 import './popular.css';
 
 const Desserts = () => {
@@ -20,11 +21,11 @@ const Desserts = () => {
 
   return (
     <div className='popular'>
-      {desserts.map((recipe) => {
+      {desserts ? desserts.map((recipe) => {
             return(
                 <RecipeCard key={recipe.id} recipe={recipe}/>
             )
-        })}
+        }) : <ErrorPage/>}
     </div>
   )
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './form.css';
+import ResultPage from './ResultPage';
 
 const Form = () => {
 
@@ -26,7 +28,9 @@ const Form = () => {
   return (
     <form className='searchbar' onSubmit={handleSubmit}>
         <input type="search" onChange={handleChange} value={value} placeholder='search for recipes'/>
-        <input type="submit" value="search" />
+        <Link to={ResultPage}>
+          <input type="submit" value="search" />
+        </Link>
     </form>
   )
 }
