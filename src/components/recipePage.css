@@ -1,0 +1,79 @@
+.recipe-details {
+    padding: 120px 40px;
+    box-sizing: border-box;
+}
+
+.recipe-details .back-btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 4px solid rgb(222, 222, 222);
+}
+
+.recipe-details .recipe-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.recipe-details img {
+    width: 50%;
+    border-radius: 8px;
+    margin-right: 100px;
+}
+
+.recipe-details h1 {
+    font-size: 40px;
+}
+
+.recipe-details h2 {
+    border-top: 4px dashed #c30000;
+    margin-top: 40px;
+    padding-top: 24px;
+}
+
+.recipe-details p, li {
+    line-height: 1.5;
+}
+
+.recipe-details-stats {
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+.recipe-details .recipe-header .recipe-details-stats span {
+    width: fit-content;
+    padding: 4px 16px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recipe-details .recipe-header .recipe-details-stats .like {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.recipe-details .recipe-header .recipe-details-stats .health {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.recipe-details .recipe-header .recipe-details-stats .servings {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.like .MuiSvgIcon-root {
+    color: red;
+}
+
+.health .MuiSvgIcon-root {
+    color: rgb(0, 222, 0);
+}
+
+.servings .MuiSvgIcon-root {
+    color: blue;
+}

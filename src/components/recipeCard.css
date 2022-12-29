@@ -1,0 +1,56 @@
+.recipe-card {
+    background: rgb(240, 240, 240);
+    padding: 24px;
+    box-sizing: border-box;
+    width: 300px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.recipe-card img {
+    width: 100%;
+}
+
+.recipe-card p {
+    color: black;
+}
+
+.recipe-card-stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipe-card-stats span {
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recipe-card .recipe-card-stats .like {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.recipe-card .recipe-card-stats .health {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.recipe-card .recipe-card-stats .servings {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.like .MuiSvgIcon-root {
+    color: red;
+}
+
+.health .MuiSvgIcon-root {
+    color: rgb(0, 222, 0);
+}
+
+.servings .MuiSvgIcon-root {
+    color: blue;
+}
