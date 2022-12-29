@@ -4,7 +4,7 @@ import './popular.css';
 
 const Veggie = () => {
 
-  const [veggies, setVeggies] = useState([]);
+  const [carbs, setCarbs] = useState([]);
 
   useEffect(() => {
     getPopular()
@@ -12,15 +12,15 @@ const Veggie = () => {
 
   const getPopular  = async () => {
       const API_KEY = '25fa9b8c2ed24a0ab4cbc6d5f480b352';
-      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${API_KEY}&number=8&tags=vegetarian`);
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${API_KEY}&number=8&tags=meat`);
       const data = await api.json();
       console.log(data);
-      setVeggies(data.recipes);
+      setCarbs(data.recipes);
   }
 
   return (
     <div className='popular'>
-      {veggies.map((recipe) => {
+      {carbs.map((recipe) => {
             return(
                 <RecipeCard key={recipe.id} recipe={recipe}/>
             )

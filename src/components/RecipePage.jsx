@@ -21,7 +21,7 @@ const RecipePage = () => {
         const API_KEY = '25fa9b8c2ed24a0ab4cbc6d5f480b352';
         const api = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`)
         const data = await api.json();
-        // console.log(data);
+        console.log(data);
         setDetails(data);
         setIngredients(data.extendedIngredients)
     }

@@ -13,6 +13,7 @@
 
 .recipe-card p {
     color: black;
+    margin: 24px 0px;
 }
 
 .recipe-card-stats {
